@@ -1,0 +1,95 @@
+.user-show-helpers {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .nav {
+    align-self: flex-start;
+  }
+  .spacer {
+    flex-grow: 1;
+  }
+  .date-picker {
+    align-self: flex-end;
+  }
+}
+
+.user-show-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 15px;
+  .user-info-panel {
+    padding: 8px;
+    width: 50%;
+
+    header.user-header {
+      display: flex;
+      .user-profile {
+        width: 20%;
+      }
+      .user-note {
+        width: 80%;
+      }
+    }
+
+    main.user-main {
+      display: flex;
+      flex-wrap: wrap;
+      label {
+        width: 15%;
+        padding-right: 8px;
+        letter-spacing: -1px;
+      }
+      span {
+        width: 35%;
+        padding-right: 8px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+  .game-info-panel {
+    padding: 8px;
+    width: 50%;
+    .game-data {
+      h5 {
+        font-size: 16px;
+        line-height: 1.5;
+        font-variation-settings: 'wght' 700;
+        margin: 0;
+        padding: 0;
+      }
+      .data-cards {
+        display: flex;
+        flex-wrap: wrap;
+        .text-field-card {
+          width: 25%;
+          padding: 2px;
+          .text-field-card-content {
+            padding: 4px;
+            background-color: white;
+            border: 1px solid black;
+            label {
+              display: block;
+              font-size: 14px;
+            }
+            span {
+              display: block;
+              font-variation-settings: 'wght' 700;
+            }
+          }
+        }
+      }
+      &.manage-user {
+        .actions {
+          display: flex;
+          .action {
+            label {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
